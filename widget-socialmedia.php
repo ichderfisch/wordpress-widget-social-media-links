@@ -1,7 +1,7 @@
 <?php
   
 /*
-  Plugin Name: ichderfisch - Social Media Widget
+  Plugin Name: ichderfisch - Widget - Social Media Links
   Plugin URI: http://www.ichderfisch.de
   Description: Provide links to my social media profiles as widget
   Version: 0.1
@@ -10,13 +10,13 @@
 */
 
 
-class ichderfisch_social_widget extends WP_Widget { 
+class ichderfisch_widget_social extends WP_Widget { 
 
 
   /* Widget Constructor */
   function __construct() {
 	    parent::__construct(
-	            'ichderfisch_social_widget',
+	            'ichderfisch_widget_social',
 	            __('Social Media', 'translation_domain'), // Name
 	            array('description' => __('Links zu meinen Social-Media Profilen', 'translation_domain'),) // Description
 	    );
@@ -116,8 +116,8 @@ class ichderfisch_social_widget extends WP_Widget {
 
 
 // register widget
-function register_ichderfisch_social_widget() {
-  register_widget('ichderfisch_social_widget');
+function register_ichderfisch_widget_social() {
+  register_widget('ichderfisch_widget_social');
 }
  
-add_action('widgets_init', 'register_ichderfisch_social_widget');
+add_action('widgets_init', 'register_ichderfisch_widget_social');
