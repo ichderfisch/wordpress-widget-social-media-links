@@ -2,7 +2,7 @@
   
 /*
   Plugin Name: ichderfisch - Widget - Social Media Links
-  Plugin URI: http://www.ichderfisch.de
+  Plugin URI: https://github.com/ichderfisch/wordpress-widget-social-media-links
   Description: Provide links to my social media profiles as widget
   Version: 0.1
   Author: Dennis Fischer
